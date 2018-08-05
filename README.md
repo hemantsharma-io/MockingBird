@@ -17,8 +17,11 @@ You can make changes to selected template in _Template_ tab and click on Save bu
 ## How to install ##
 1. Download [MockingBird.zip](MockingBird.zip)
 2. Extract it to Fiddler's script folder. You can find the folder path from Fiddler > Tools > Options > Extesions (tab)
-3. Restart Fiddler
+3. Start/Restart Fiddler
 
 ## System requirement ##
 1. Fiddler installed on machine
 2. .Net framework 4.5.2
+
+## Usage ##
+[Watch this video](help/MockingBird-Usage.mp4) to know how to convert a request
