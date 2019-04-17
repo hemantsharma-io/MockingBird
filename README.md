@@ -24,4 +24,4 @@ You can make changes to selected template in _Template_ tab and click on Save bu
 2. .Net framework 4.5.2
 
 ## Usage ##
-[Watch this video](https://youtu.be/HLYiFoTWgFQ) to know how to convert a request
+[Watch this video](https://youtu.be/SujiYylkB7s) to know how to convert a HTTP request to Java code and debug it
