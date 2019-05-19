@@ -34,19 +34,19 @@ You can make changes to selected template in _Template_ tab and click on Save bu
 
    > I created a simple HTTP sampler JMeter project and having a loop count of 100 and saved the _.jmx_ file as _.tpl_ after adding mustache tags
    > 
-   >![Img](help/Jmeter/Simple GET HTTP Load Test/JmeterBlankProject.png)
+   >![Img](help/Jmeter/Simple%20GET%20HTTP%20Load%20Test/JmeterBlankProject.png)
 
 2. Switch to _Generate Code_ tab
 3. Drag & Drop HTTP Request to code area
 
-   ![](help/Jmeter/Simple GET HTTP Load Test/GenerateCode.png)
+   ![](help/Jmeter/Simple%20GET%20HTTP%20Load%20Test/GenerateCode.png)
 
 4. Click _Save as file_ button. Enter _JMeter Load Test.jmx_ as file name and click _Save_ button to save the file.
 
-   ![](help/Jmeter/Simple GET HTTP Load Test/SaveJmx.png)
+   ![](help/Jmeter/Simple%20GET%20HTTP%20Load%20Test/SaveJmx.png)
 
 5. Open JMeter and open _JMeter Load Test.jmx_ file
-6. Click ![_start_](help/Jmeter/Simple GET HTTP Load Test/StartButton.png) button in JMeter window's toolbar
+6. Click ![_start_](help/Jmeter/Simple%20GET%20HTTP%20Load%20Test/StartButton.png) button in JMeter window's toolbar
 7. Click on _Aggregate Report_ and it will display you the aggregate run results like below.
 
-   >![Aggregate Report](help/Jmeter/Simple GET HTTP Load Test/AggregateReport.png)
+   >![Aggregate Report](help/Jmeter/Simple%20GET%20HTTP%20Load%20Test/AggregateReport.png)
