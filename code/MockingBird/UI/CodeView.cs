@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 using Fiddler;
 using MockingBird.Core;
@@ -76,6 +77,19 @@ namespace MockingBird.UI
                 TemplateController.SaveTemplateText(cmbTpl.SelectedItem.ToString(), txtTemplate.Text);
             }catch(Exception ex){
                 FiddlerApplication.Log.LogFormat("Mocking Bird - Error saving template. Message: {0} , Stack: {1}", ex.Message, ex.StackTrace);
+            }
+        }
+
+        private void btnSaveAsFile_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            //saveFileDialog1.InitialDirectory = @"C:\";
+            saveFileDialog1.Title = "Save as File";
+            saveFileDialog1.Filter = "All files (*.*)|*.*";          
+            saveFileDialog1.RestoreDirectory = true;
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllText(saveFileDialog1.FileName, txtOutput.Text);
             }
         }
     }

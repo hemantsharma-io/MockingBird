@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CodeView));
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabOutput = new System.Windows.Forms.TabPage();
             this.tblCodeMain = new System.Windows.Forms.TableLayoutPanel();
@@ -43,6 +44,7 @@
             this.tabAbout = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.logoPicture = new System.Windows.Forms.PictureBox();
+            this.btnSaveAsFile = new System.Windows.Forms.ToolStripButton();
             this.tabMain.SuspendLayout();
             this.tabOutput.SuspendLayout();
             this.tblCodeMain.SuspendLayout();
@@ -74,7 +76,7 @@
             this.tabOutput.Padding = new System.Windows.Forms.Padding(3);
             this.tabOutput.Size = new System.Drawing.Size(654, 306);
             this.tabOutput.TabIndex = 1;
-            this.tabOutput.Text = "Generated Code";
+            this.tabOutput.Text = "Generate Code";
             this.tabOutput.UseVisualStyleBackColor = true;
             // 
             // tblCodeMain
@@ -94,8 +96,10 @@
             // 
             // toolbarCode
             // 
+            this.toolbarCode.BackColor = System.Drawing.Color.WhiteSmoke;
             this.toolbarCode.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnCopyCode});
+            this.btnCopyCode,
+            this.btnSaveAsFile});
             this.toolbarCode.Location = new System.Drawing.Point(0, 0);
             this.toolbarCode.Name = "toolbarCode";
             this.toolbarCode.Size = new System.Drawing.Size(648, 25);
@@ -104,10 +108,11 @@
             // 
             // btnCopyCode
             // 
-            this.btnCopyCode.BackColor = System.Drawing.Color.Transparent;
+            this.btnCopyCode.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCopyCode.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnCopyCode.Image = global::MockingBird.Properties.Resources.MockingBirdIcon;
             this.btnCopyCode.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCopyCode.Margin = new System.Windows.Forms.Padding(0, 1, 5, 2);
             this.btnCopyCode.Name = "btnCopyCode";
             this.btnCopyCode.Size = new System.Drawing.Size(68, 22);
             this.btnCopyCode.Text = "Copy code";
@@ -220,6 +225,17 @@
             this.logoPicture.TabIndex = 0;
             this.logoPicture.TabStop = false;
             // 
+            // btnSaveAsFile
+            // 
+            this.btnSaveAsFile.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSaveAsFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnSaveAsFile.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveAsFile.Image")));
+            this.btnSaveAsFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSaveAsFile.Name = "btnSaveAsFile";
+            this.btnSaveAsFile.Size = new System.Drawing.Size(68, 22);
+            this.btnSaveAsFile.Text = "Save as file";
+            this.btnSaveAsFile.Click += new System.EventHandler(this.btnSaveAsFile_Click);
+            // 
             // CodeView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,5 +277,6 @@
         private System.Windows.Forms.ToolStripButton btnCopyCode;
         private System.Windows.Forms.PictureBox logoPicture;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripButton btnSaveAsFile;
     }
 }
