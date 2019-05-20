@@ -46,6 +46,17 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+            {{#RequestHeaders}}
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">{{Name}}</stringProp>
+                <stringProp name="Header.value">{{Value}}</stringProp>
+              </elementProp>
+            {{/RequestHeaders}}
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Result Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
