@@ -28,7 +28,7 @@ You can make changes to selected template in _Template_ tab and click on Save bu
    > [Watch this video](https://youtu.be/SujiYylkB7s)  
 
 
-### **Convert a GET HTTP request to JMX (i.e. JMeter) for perf testing in Fiddler** ###
+### **Convert a Fiddler session to JMX (i.e. JMeter) for perf testing** ###
 
 1. Select _'JMeter Load Test'_ template from drop down in _Template_ tab
 
