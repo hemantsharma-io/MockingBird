@@ -29,7 +29,13 @@
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="My Http Request" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+            <collectionProp name="Arguments.arguments" elementType="Arguments">
+              <elementProp name="" elementType="HTTPArgument">
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+              <stringProp name="Argument.value">{{RequestBodyAsHtmlEncode}}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain">{{hostname}}</stringProp>
           <stringProp name="HTTPSampler.port">{{^isHTTPS}}{{port}}{{/isHTTPS}}</stringProp>
@@ -44,6 +50,7 @@
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
         </HTTPSamplerProxy>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
