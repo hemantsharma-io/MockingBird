@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 
 namespace MockingBird.Domain
 {
@@ -23,6 +24,22 @@ namespace MockingBird.Domain
             if (requestBodyBytes != null)
             {
                 return Convert.ToBase64String(requestBodyBytes);
+            }
+            return null;
+        }
+        public string RequestBodyAsHTMLEncode()
+        {
+            if (!String.IsNullOrEmpty(GetRequestBodyAsString()))
+            {
+                return WebUtility.HtmlEncode(GetRequestBodyAsString());
+            }
+            return null;
+        }
+        public string ResponseBodyAsHTMLEncode()
+        {
+            if (!String.IsNullOrEmpty(GetResponseBodyAsString()))
+            {
+                return WebUtility.HtmlEncode(GetResponseBodyAsString());
             }
             return null;
         }
