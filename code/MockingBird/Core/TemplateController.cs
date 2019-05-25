@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace MockingBird.Core
 {
@@ -15,8 +16,7 @@ namespace MockingBird.Core
 
         static TemplateController()
         {
-            string path = (new Uri(Assembly.GetExecutingAssembly().CodeBase)).AbsolutePath;
-            templatePath = Path.Combine(Path.GetDirectoryName(path), TEMPLATE_FOLDER_NAME);
+            templatePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), TEMPLATE_FOLDER_NAME);
         }
         /// <summary>
         /// Template folder name is static as of now
