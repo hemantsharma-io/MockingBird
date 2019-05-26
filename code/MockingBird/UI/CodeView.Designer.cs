@@ -34,6 +34,7 @@
             this.tblCodeMain = new System.Windows.Forms.TableLayoutPanel();
             this.toolbarCode = new System.Windows.Forms.ToolStrip();
             this.btnCopyCode = new System.Windows.Forms.ToolStripButton();
+            this.btnSaveAsFile = new System.Windows.Forms.ToolStripButton();
             this.txtOutput = new System.Windows.Forms.TextBox();
             this.tabCodeTemplate = new System.Windows.Forms.TabPage();
             this.tblTemplateMain = new System.Windows.Forms.TableLayoutPanel();
@@ -44,7 +45,6 @@
             this.tabAbout = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.logoPicture = new System.Windows.Forms.PictureBox();
-            this.btnSaveAsFile = new System.Windows.Forms.ToolStripButton();
             this.tabMain.SuspendLayout();
             this.tabOutput.SuspendLayout();
             this.tblCodeMain.SuspendLayout();
@@ -117,6 +117,17 @@
             this.btnCopyCode.Size = new System.Drawing.Size(68, 22);
             this.btnCopyCode.Text = "Copy code";
             this.btnCopyCode.Click += new System.EventHandler(this.btnCopyCode_Click);
+            // 
+            // btnSaveAsFile
+            // 
+            this.btnSaveAsFile.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSaveAsFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnSaveAsFile.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveAsFile.Image")));
+            this.btnSaveAsFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSaveAsFile.Name = "btnSaveAsFile";
+            this.btnSaveAsFile.Size = new System.Drawing.Size(68, 22);
+            this.btnSaveAsFile.Text = "Save as file";
+            this.btnSaveAsFile.Click += new System.EventHandler(this.btnSaveAsFile_Click);
             // 
             // txtOutput
             // 
@@ -215,7 +226,6 @@
             // 
             // logoPicture
             // 
-            this.logoPicture.BackgroundImage = global::MockingBird.Properties.Resources.MockingBird;
             this.logoPicture.Image = global::MockingBird.Properties.Resources.MockingBird;
             this.logoPicture.InitialImage = global::MockingBird.Properties.Resources.MockingBird;
             this.logoPicture.Location = new System.Drawing.Point(6, 6);
@@ -224,17 +234,6 @@
             this.logoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoPicture.TabIndex = 0;
             this.logoPicture.TabStop = false;
-            // 
-            // btnSaveAsFile
-            // 
-            this.btnSaveAsFile.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSaveAsFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnSaveAsFile.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveAsFile.Image")));
-            this.btnSaveAsFile.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSaveAsFile.Name = "btnSaveAsFile";
-            this.btnSaveAsFile.Size = new System.Drawing.Size(68, 22);
-            this.btnSaveAsFile.Text = "Save as file";
-            this.btnSaveAsFile.Click += new System.EventHandler(this.btnSaveAsFile_Click);
             // 
             // CodeView
             // 
