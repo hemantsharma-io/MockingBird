@@ -1,6 +1,8 @@
 ![Mocking Bird](MockingBird.png "Mocking Bird")
 # MockingBird #
-There are lots of reason you might need to debug a http request(s), be it try to recreate a issue and narrow-down the problem in your favorite language editor or compare contents between different request(s) etc. MockingBird is a Fiddler extension to transform a request to any format you want e.g. you can generate Java, C#.net or any other language code from selected requests you want to troubleshoot issues for and use the output code in your favourite IDE. It's not limited to just code and can be used to create any format as long as you can create a Mustache template for it e.g. you can create a csv file with selected HTTP request to perform a functional or load test in SOAP UI or JMeter.
+There are lots of reason you might need to debug a HTTP/HTTPs request(s), be it try to recreate a issue and narrow-down the problem in your favorite language editor or compare contents between different request(s) etc. MockingBird is a [Progress Telerik Fiddler<sup>TM</sup>](https://www.telerik.com/fiddler) extension to transform a Fiddler's HTTP/HTTPs session to any other format you want e.g. you can generate Java, C#.net or any other language code from selected requests you want to troubleshoot issues for and use the output code in your favourite IDE. It's not limited to just code and can be used to create any format as long as you can create a Mustache template for it e.g. you can create a csv file with selected HTTP request to perform a functional or load test in SOAP UI or JMeter.
+
+![How it works](help/MockingBird%20how%20it%20works.png)
 
 ## Features ##
 ### Convert HTTP requests to any format you want ###
@@ -51,3 +53,8 @@ You can make changes to selected template in _Template_ tab and click on Save bu
 7. Click on _Aggregate Report_ and it will display you the aggregate run results like below.
 
    >![Aggregate Report](help/Jmeter/Simple%20GET%20HTTP%20Load%20Test/AggregateReport.png)
+
+### References ###
+1. [Progress Telerik Fiddler<sup>TM</sup>](https://www.telerik.com/fiddler)
+2. [mustache.js](https://github.com/janl/mustache.js/)
+3. [Nustache - Logic-less templates for .NET](https://github.com/jdiamond/Nustache)
