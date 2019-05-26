@@ -1,3 +1,4 @@
+![Mocking Bird](MockingBird.png "Mocking Bird")
 # MockingBird #
 There are lots of reason you might need to debug a http request(s), be it try to recreate a issue and narrow-down the problem in your favorite language editor or compare contents between different request(s) etc. MockingBird is a Fiddler extension to transform a request to any format you want e.g. you can generate Java, C#.net or any other language code from selected requests you want to troubleshoot issues for and use the output code in your favourite IDE. It's not limited to just code and can be used to create any format as long as you can create a Mustache template for it e.g. you can create a csv file with selected HTTP request to perform a functional or load test in SOAP UI or JMeter.
 
