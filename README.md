@@ -12,7 +12,7 @@ As soon as you have a template it's just a matter of dragging and dropping selec
 Select multiple requests and just drop inside _Generate Tab_ tab.
 
 ### Support multiple templates ###
-Create as many templates as you need. Just place them inside _<Fiddler's script path>/MockingBirdTemplates/\<TemplateName>.tpl_ and restart Fiddler the template will be avilable in ___Template___ tab. Simply select it and drag and drop HTTP request in _Generate Code_ tab.
+Create as many templates as you need. Just place them inside _<Fiddler's script path>/templates/\<TemplateName>.tpl_ and restart Fiddler the template will be avilable in ___Template___ tab. Simply select it and drag and drop HTTP request in _Generate Code_ tab.
 
 ### Edit templates at runtime ###
 You can make changes to selected template in _Template_ tab and click on Save button to save it. All the request would be trasformed as per the updated changes.
