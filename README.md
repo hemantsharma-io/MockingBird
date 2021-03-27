@@ -54,6 +54,21 @@ You can make changes to selected template in _Template_ tab and click on Save bu
 
    >![Aggregate Report](help/Jmeter/Simple%20GET%20HTTP%20Load%20Test/AggregateReport.png)
 
+### Most used variables ###
+  - `{{#SelectedSessions}}...{{/SelectedSessions}}` - This is a for-each loop for selected sessions
+  - `{{{GetRequestBodyAsString}}}` - Return a string generated from request body
+  - `{{RequestMethod}}` - Http request method e.g. GET, POST and PUT etc.
+  - `{{#RequestHeaders}}...{{/RequestHeaders}}` - This si a for-each loop for request headers in single selected session or current session in for-each session loop
+  - `{{Name}}` - If used inside `{{#RequestHeaders}}...{{/RequestHeaders}}` then returns current header name
+  - `{{Value}}` - If used inside `{{#RequestHeaders}}...{{/RequestHeaders}}` then returns current header value
+  - `{{hostname}}`- Returns current selected session's hostname
+  - `{{port}}` - Returns current selected session's port number
+  - `{{PathAndQuery}}` - Returns path without hostname and port
+ 
+   If you want to explore more variables and methods goto Fiddler > Rules > Customize rules and you should see Fiddler Script editor. This editor will have list of objects with their typical properties and methods that you can refer.
+   ![image](https://user-images.githubusercontent.com/24278345/112733646-2d56d180-8f67-11eb-8a9a-43f62d1ea694.png)
+
+
 ### References ###
 1. [Progress Telerik Fiddler<sup>TM</sup>](https://www.telerik.com/fiddler)
 2. [mustache.js](https://github.com/janl/mustache.js/)
