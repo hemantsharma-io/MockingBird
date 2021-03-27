@@ -65,7 +65,7 @@ You can make changes to selected template in _Template_ tab and click on Save bu
   - `{{port}}` - Returns current selected session's port number
   - `{{PathAndQuery}}` - Returns path without hostname and port
  
-   If you want to explore more variables and methods goto Fiddler > Rules > Customize rules and you should see Fiddler Script editor. This editor will have list of objects with their typical properties and methods that you can refer.
+   If you want to explore more variables and methods goto Fiddler > Rules > Customize rules and you should see Fiddler ScriptEditor. This editor will have list of objects with their typical properties and methods that you can refer.
    ![image](https://user-images.githubusercontent.com/24278345/112733646-2d56d180-8f67-11eb-8a9a-43f62d1ea694.png)
 
 
